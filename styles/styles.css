@@ -1,0 +1,327 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+
+}
+
+
+
+
+
+/* Navbar  */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+/* Download Button */
+
+
+.download-button {
+    color: rgb(45, 45, 45);
+    transition: all 0.3s;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.download-button:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.download-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(11, 45, 118, 0.5);
+    transform: scale(1.2, 1.2);
+}
+
+.download-button:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+
+
+
+
+
+/* -------------------------HEADINGS ----------------------------*/
+
+.BIG-HEADING {
+
+    font-family: "Outfit", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+
+}
+
+.secton-heading {
+    font-size: 2.6rem;
+}
+
+
+
+
+/* TITLE SECTION  */
+
+#title .container-fluid {
+
+    text-align: left;
+    padding: 3% 15% 7%;
+    padding-bottom: 200px;
+
+}
+
+
+
+
+/* --------- SECTIONS --------- */
+
+.colored {
+    background-color: rgb(223, 253, 253);
+    color: black;
+}
+
+.light-color {
+    background-color: rgb(236, 249, 249);
+    color: rgb(55, 55, 55);
+}
+
+
+
+
+
+/* Title Image */
+
+.top-image {
+    width: 640px;
+    right: 10%;
+    left: 45%;
+    position: absolute;
+
+}
+
+
+
+
+/* -------------- FEATURES -------------- */
+
+#features {
+
+    padding: 10px 50px 150px;
+    position: relative;
+    z-index: 1;
+    /* works without adding z-index: 1; too in this case  */
+}
+
+.title-page2 {
+    font-size: 5rem;
+    color: rgb(57, 142, 217);
+}
+
+.feature-title {
+    font-size: 2.8rem;
+}
+
+p {
+    color: rgb(132, 132, 132);
+}
+
+.page2body {
+    font-family: "Outfit", sans-serif;
+    font-weight: light;
+    font-size: 1rem;
+
+    padding: 5%;
+}
+
+.numbers {
+    padding-bottom: 1rem;
+    color: rgb(68, 196, 106);
+}
+
+.numbers:hover {
+    color: rgb(195, 226, 204);
+    ;
+}
+
+
+
+
+
+/* Testimonials Section */
+
+#testimonials {
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.testimonial-text {
+    font-size: 2.6rem;
+}
+
+.page3 {
+    width: 200px;
+}
+
+#carouselExampleControls {
+    border-width: 1px;
+    border: solid blue;
+    border-style: inset;
+    border-radius: 50px;
+    padding: 20px;
+    padding-bottom: 10px;
+
+
+}
+
+.page3text {
+    font-size: 35px;
+    font-weight: lighter;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#press {
+    padding-bottom: 20px;
+}
+
+.press-logo {
+    width: 20%;
+}
+
+.carousel-item {
+    padding: 7% 12%;
+}
+
+
+
+
+
+/* PRICING */
+
+#pricing {
+    padding: 60px 100px;
+}
+
+.card {
+    height: 100%;
+
+    margin: auto;
+}
+
+.price-text {
+    font-size: 2.6rem;
+}
+
+.pricingcol {
+    padding: 3% 2%;
+}
+
+
+
+
+
+
+/* CALL TO ACTION  */
+
+.download-button2 {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/* FOOTER  */
+
+.socialcss {
+    margin: 20px 10px;
+}
+
+
+
+
+
+
+/* ------------------- Media Queries ----------------------- */
+
+@media (max-width: 770px) {
+
+    .top-image {
+        position: static;
+        width: 100%;
+
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    .d-md-flex {
+        flex-direction: column;
+    }
+}
